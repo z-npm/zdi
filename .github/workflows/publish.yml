@@ -1,0 +1,35 @@
+name: Publish CI
+
+on:
+  push:
+    branches: ["zero"]
+  pull_request:
+    branches: ["zero"]
+
+env:
+  NODE_VERSION: "24.x"
+  REGISTRY: "https://registry.npmjs.org"
+  SCOPE: "@o.z"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: ${{ env.REGISTRY }}
+          scope: ${{ env.SCOPE }}
+      - run: |
+          corepack enable
+          YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
+      - run: yarn build
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - run: npm publish --access public
