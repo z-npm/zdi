@@ -4,7 +4,7 @@
 
 # Class: InstantiationError
 
-Defined in: src/lib/index.ts:264
+Defined in: [src/lib/index.ts:264](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L264)
 
 Error thrown when a service fails to instantiate.
 
@@ -18,7 +18,7 @@ Error thrown when a service fails to instantiate.
 
 > **new InstantiationError**(`token`, `cause`): `InstantiationError`
 
-Defined in: src/lib/index.ts:265
+Defined in: [src/lib/index.ts:265](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L265)
 
 #### Parameters
 
@@ -42,9 +42,9 @@ Defined in: src/lib/index.ts:265
 
 ### cause?
 
-> `optional` **cause**: `unknown`
+> `optional` **cause?**: `unknown`
 
-Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
+Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:24
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: node\_modules/typescript/lib/lib.es2022.error.d.ts:26
 
 > **name**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1074
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
 
 > **message**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1075
 
 #### Inherited from
 
@@ -78,9 +78,9 @@ Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1077
 
 ### stack?
 
-> `optional` **stack**: `string`
+> `optional` **stack?**: `string`
 
-Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1078
+Defined in: node\_modules/typescript/lib/lib.es5.d.ts:1076
 
 #### Inherited from
 

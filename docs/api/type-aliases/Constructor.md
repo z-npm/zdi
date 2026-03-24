@@ -2,11 +2,11 @@
 
 ***
 
-# Type Alias: Constructor()\<T, Args\>
+# Type Alias: Constructor\<T, Args\>
 
 > **Constructor**\<`T`, `Args`\> = (...`args`) => `T`
 
-Defined in: src/lib/index.ts:226
+Defined in: [src/lib/index.ts:226](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L226)
 
 A constructor function type that can be used as a DI token.
 
