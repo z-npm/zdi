@@ -4,7 +4,7 @@
 
 # Class: DuplicateRegistrationError
 
-Defined in: [src/lib/index.ts:275](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L275)
+Defined in: [src/lib/index.ts:275](https://github.com/z-npm/zdi/blob/da70bd8012c033ee758481367198eed485ffd13f/src/lib/index.ts#L275)
 
 Error thrown when attempting to register an already-registered service.
 
@@ -18,7 +18,7 @@ Error thrown when attempting to register an already-registered service.
 
 > **new DuplicateRegistrationError**(`token`): `DuplicateRegistrationError`
 
-Defined in: [src/lib/index.ts:276](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L276)
+Defined in: [src/lib/index.ts:276](https://github.com/z-npm/zdi/blob/da70bd8012c033ee758481367198eed485ffd13f/src/lib/index.ts#L276)
 
 #### Parameters
 

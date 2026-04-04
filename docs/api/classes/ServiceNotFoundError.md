@@ -4,7 +4,7 @@
 
 # Class: ServiceNotFoundError
 
-Defined in: [src/lib/index.ts:254](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L254)
+Defined in: [src/lib/index.ts:254](https://github.com/z-npm/zdi/blob/da70bd8012c033ee758481367198eed485ffd13f/src/lib/index.ts#L254)
 
 Error thrown when attempting to resolve an unregistered service.
 
@@ -18,7 +18,7 @@ Error thrown when attempting to resolve an unregistered service.
 
 > **new ServiceNotFoundError**(`token`): `ServiceNotFoundError`
 
-Defined in: [src/lib/index.ts:255](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L255)
+Defined in: [src/lib/index.ts:255](https://github.com/z-npm/zdi/blob/da70bd8012c033ee758481367198eed485ffd13f/src/lib/index.ts#L255)
 
 #### Parameters
 
