@@ -4,7 +4,7 @@
 
 # Class: Container
 
-Defined in: [src/lib/index.ts:16](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L16)
+Defined in: [src/lib/index.ts:16](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L16)
 
 Dependency Injection Container for TypeScript/JavaScript applications.
 Supports transient and singleton services, automatic dependency resolution,
@@ -37,7 +37,7 @@ const userService = container.get(UserService);
 
 > **register**\<`T`\>(`token`, `factory`): `void`
 
-Defined in: [src/lib/index.ts:44](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L44)
+Defined in: [src/lib/index.ts:44](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L44)
 
 Registers a transient service (new instance created on each resolution).
 
@@ -81,7 +81,7 @@ container.register(HttpClient, () => new HttpClient({ timeout: 5000 }));
 
 > **registerSingleton**\<`T`\>(`token`, `factory`): `void`
 
-Defined in: [src/lib/index.ts:59](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L59)
+Defined in: [src/lib/index.ts:59](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L59)
 
 Registers a singleton service (one instance shared across all resolutions).
 
@@ -125,7 +125,7 @@ container.registerSingleton(Config, () => loadConfig());
 
 > **registerClass**\<`T`, `A`\>(`token`, `dependencies`, `singleton?`, `disposeCallback?`): `void`
 
-Defined in: [src/lib/index.ts:80](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L80)
+Defined in: [src/lib/index.ts:80](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L80)
 
 Registers a class with automatic dependency resolution.
 
@@ -184,7 +184,7 @@ container.registerClass(Car, [Engine, Plate], true);
 
 > **get**\<`T`\>(`token`): `T`
 
-Defined in: [src/lib/index.ts:124](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L124)
+Defined in: [src/lib/index.ts:124](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L124)
 
 Resolves and returns an instance of the requested service.
 
@@ -224,7 +224,7 @@ const car = container.get(Car);
 
 > **has**\<`T`\>(`token`): `boolean`
 
-Defined in: [src/lib/index.ts:155](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L155)
+Defined in: [src/lib/index.ts:155](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L155)
 
 Checks if a service is registered in the container.
 
@@ -254,7 +254,7 @@ True if the service is registered, false otherwise.
 
 > **dispose**(): `Promise`\<`void`\>
 
-Defined in: [src/lib/index.ts:166](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L166)
+Defined in: [src/lib/index.ts:166](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L166)
 
 Disposes all singleton services that have disposal callbacks.
 Call this when shutting down your application to clean up resources.
@@ -275,7 +275,7 @@ await container.dispose();
 
 > **createChild**(): `Container`
 
-Defined in: [src/lib/index.ts:193](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L193)
+Defined in: [src/lib/index.ts:193](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L193)
 
 Creates a child container that inherits registrations from the parent
 but maintains separate singleton instances.

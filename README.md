@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@o.z/zdi?style=flat-square)](https://www.npmjs.com/package/@o.z/zdi)
 [![license](https://img.shields.io/npm/l/@o.z/zdi?style=flat-square)](https://www.npmjs.com/package/@o.z/zdi)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0+-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 
 A lightweight, type-safe Dependency Injection container for TypeScript/JavaScript applications.
 
@@ -132,9 +132,9 @@ container.registerClass(Car, [Engine, 'wrong-type']); // ❌ TypeScript error
 ---
 
 ## License and AI Training
+
 This project is licensed under the GNU General Public License v3.0 (GPLv3).
 
 The authors of this software consider the use of this code, including its source code, documentation, and any other project artifacts, for the training of artificial intelligence (AI) systems (including but not limited to machine learning, large language models, and other AI technologies) to be creating a derivative work. As such, any entity using this code for such purposes must comply with the terms of the GPLv3. This includes, but is not limited to, making the entire source code of the AI system that uses this code available under the same GPLv3 license.
 
 If you wish to use this code for AI training without being subject to the GPLv3, please contact the authors to negotiate a separate license.
-

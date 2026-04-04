@@ -4,7 +4,7 @@
 
 # Class: InstantiationError
 
-Defined in: [src/lib/index.ts:264](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L264)
+Defined in: [src/lib/index.ts:264](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L264)
 
 Error thrown when a service fails to instantiate.
 
@@ -18,7 +18,7 @@ Error thrown when a service fails to instantiate.
 
 > **new InstantiationError**(`token`, `cause`): `InstantiationError`
 
-Defined in: [src/lib/index.ts:265](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L265)
+Defined in: [src/lib/index.ts:265](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L265)
 
 #### Parameters
 

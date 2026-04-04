@@ -1,6 +1,6 @@
 {
   "name": "@o.z/zdi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A lightweight, type-safe Dependency Injection container for TypeScript/JavaScript applications.",
   "homepage": "https://github.com/z-npm/zdi#readme",
   "docs": "https://github.com/z-npm/zdi#readme",

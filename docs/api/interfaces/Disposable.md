@@ -4,7 +4,7 @@
 
 # Interface: Disposable
 
-Defined in: [src/lib/index.ts:239](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L239)
+Defined in: [src/lib/index.ts:239](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L239)
 
 Interface for disposable services.
 
@@ -14,7 +14,7 @@ Interface for disposable services.
 
 > **dispose**: (`instance`) => `void` \| `Promise`\<`void`\>
 
-Defined in: [src/lib/index.ts:244](https://github.com/z-npm/zdi/blob/e11019274cc8210d4876d974765efeb869444d1c/src/lib/index.ts#L244)
+Defined in: [src/lib/index.ts:244](https://github.com/z-npm/zdi/blob/4520f37bbf8e82c0ffacb016b71939ac5baf918a/src/lib/index.ts#L244)
 
 Cleans up resources. Can be synchronous or asynchronous.
 
