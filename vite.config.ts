@@ -11,7 +11,7 @@ const scssEntries = Object.fromEntries(
     .sync("src/lib/styles/**/*.{css,scss,sass}")
     .map((file) => [
       relative("src/lib", file).slice(0, -extname(file).length),
-      resolve(__dirname, file),
+      resolve(import.meta.dirname, file),
     ]),
 )
 const tsIgnore = [
@@ -27,7 +27,7 @@ const tsEntries = Object.fromEntries(
     })
     .map((file) => [
       relative("src/lib", file).replace(/\.tsx?$/, ""),
-      resolve(__dirname, file),
+      resolve(import.meta.dirname, file),
     ]),
 )
 
@@ -36,7 +36,7 @@ function updatePackageExports(entries: Record<string, string>) {
     name: "update-package-exports" as const,
     apply: "build" as const,
     closeBundle() {
-      const pkgPath = resolve(__dirname, "package.json")
+      const pkgPath = resolve(import.meta.dirname, "package.json")
       const pkg = JSON.parse(readFileSync(pkgPath, "utf-8"))
       const exports: Record<string, any> = {}
 
@@ -112,9 +112,8 @@ export default defineConfig({
     dts({
       exclude: tsIgnore,
       include: ["src/lib/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-      rollupTypes: false,
       entryRoot: "src/lib",
-      outDir: "dist",
+      outDirs: "dist",
     }),
     updatePackageExports({ ...tsEntries, ...scssEntries }),
   ],

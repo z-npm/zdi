@@ -1,6 +1,6 @@
 {
   "name": "@o.z/zdi",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A lightweight, type-safe Dependency Injection container for TypeScript/JavaScript applications.",
   "homepage": "https://github.com/z-npm/zdi#readme",
   "docs": "https://github.com/z-npm/zdi#readme",
@@ -57,23 +57,23 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
-    "@o.z/vite-plugin-swc": "^0.8.0",
+    "@o.z/vite-plugin-swc": "^0.19.0",
     "@testing-library/dom": "^10.4.1",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/jsdom": "^28.0.1",
-    "@types/node": "^25.5.2",
-    "@vitest/coverage-v8": "^4.1.2",
-    "@vitest/ui": "^4.1.2",
+    "@testing-library/user-event": "^14.6.6",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.4.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "@vitest/ui": "^4.1.11",
     "glob": "^13.0.6",
-    "jsdom": "^29.0.1",
-    "sass": "^1.99.0",
-    "typedoc": "^0.28.18",
-    "typedoc-plugin-markdown": "^4.11.0",
-    "typescript": "^6.0.2",
-    "vite": "^8.0.3",
-    "vite-plugin-dts": "^4.5.4",
-    "vite-plugin-lib-inject-css": "^2.2.2",
-    "vitest": "^4.1.2"
+    "jsdom": "^30.0.1",
+    "sass": "^1.103.1",
+    "typedoc": "^0.28.20",
+    "typedoc-plugin-markdown": "^4.13.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2",
+    "vite-plugin-dts": "^5.0.3",
+    "vite-plugin-lib-inject-css": "2.0.1",
+    "vitest": "^4.1.11"
   },
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
@@ -94,5 +94,5 @@
     "registry": "https://registry.npmjs.org/"
   },
   "sideEffects": false,
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.18.0"
 }
